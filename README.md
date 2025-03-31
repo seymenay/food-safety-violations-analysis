@@ -148,11 +148,11 @@ To maintain a clean and modular structure, the project was divided into multiple
 
 ### Key Findings
 - **The country with the highest number of violations was Poland, with 946 cases.** It was followed by France (804) and the Netherlands (741).  
-  ![Violations by Country](/Users/seymenay/food-safety-violations-analysis/images/origin_new.png)
+  ![Violations by Country](images/origin_new.png)
 -**Also, see their percentages.**
-  ![Notifying Countries](/Users/seymenay/food-safety-violations-analysis/images/percentage_counts_origin.png)
+  ![Notifying Countries](images/percentage_counts_origin.png)
 - **Germany was the most frequent notifying country, reporting 1,195 violations.**  
-  ![Notifying Countries](/Users/seymenay/food-safety-violations-analysis/images/notifying_new.png)
+  ![Notifying Countries](images/notifying_new.png)
 -**Also, see their percentages.**
   ![Notifying Countries](/Users/seymenay/food-safety-violations-analysis/images/percentage_counts_notifting.png)
 - **The most affected category was poultry meat and poultry meat products, particularly from Poland, with 1,079 violations.**  
