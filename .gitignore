@@ -1,0 +1,17 @@
+# Python derlenmiş dosyaları
+*.pyc
+*.pyo
+__pycache__/
+
+# IDE ve editor konfigürasyon dosyaları
+.vscode/
+.idea/
+
+# Sanal Ortamlar
+env/
+venv/
+
+# Diğer
+*.log
+
+.DS_Store

@@ -1,0 +1,108 @@
+#Column names
+Index(['reference', 'category', 'type', 'subject', 'date', 'notifying_country',
+       'classification', 'risk_decision', 'distribution', 'forAttention',
+       'forFollowUp', 'operator', 'origin', 'hazards'],
+      dtype='object')
+
+
+#Check NaN values for important columns
+risk_decision        0
+origin               0
+distribution         0
+date                 0
+notifying_country    0
+category             0
+classification       0
+dtype: int64
+(7496, 14)
+
+#df.shape
+(7496, 14)
+
+#df.info()
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 7496 entries, 0 to 7495
+Data columns (total 14 columns):
+ #   Column             Non-Null Count  Dtype  
+---  ------             --------------  -----  
+ 0   reference          7496 non-null   float64
+ 1   category           7496 non-null   object 
+ 2   type               7496 non-null   object 
+ 3   subject            7496 non-null   object 
+ 4   date               7496 non-null   object 
+ 5   notifying_country  7496 non-null   object 
+ 6   classification     7496 non-null   object 
+ 7   risk_decision      7496 non-null   object 
+ 8   distribution       7496 non-null   object 
+ 9   forAttention       4789 non-null   object 
+ 10  forFollowUp        5479 non-null   object 
+ 11  operator           7496 non-null   object 
+ 12  origin             7496 non-null   object 
+ 13  hazards            5378 non-null   object 
+dtypes: float64(1), object(13)
+memory usage: 820.0+ KB
+None
+
+#Category value_counts()
+poultry meat and poultry meat products                  1079
+fruits and vegetables                                    793
+dietetic foods, food supplements and fortified foods     585
+meat and meat products (other than poultry)              573
+cereals and bakery products                              560
+nuts, nut products and seeds                             463
+fish and fish products                                   435
+milk and milk products                                   387
+other food product / mixed                               385
+herbs and spices                                         328
+bivalve molluscs and products thereof                    281
+prepared dishes and snacks                               280
+feed materials                                           209
+confectionery                                            198
+cocoa and cocoa preparations, coffee and tea             130
+soups, broths, sauces and condiments                     104
+food contact materials                                    97
+food additives and flavourings                            84
+ices and desserts                                         76
+non-alcoholic beverages                                   75
+fats and oils                                             67
+pet food                                                  64
+eggs and egg products                                     58
+alcoholic beverages                                       43
+crustaceans and products thereof                          37
+compound feeds                                            30
+cephalopods and products thereof                          20
+honey and royal jelly                                      9
+feed additives                                             9
+feed premixtures                                           8
+wine                                                       8
+water for human consumption (other)                        7
+gastropods                                                 4
+natural mineral waters                                     4
+live animals                                               3
+animal by-products                                         3
+Name: count, dtype: int64
+
+#Classification value_counts()
+alert notification                        4536
+information notification for attention    1835
+information notification for follow-up     830
+border rejection notification              294
+non-compliance notification                  1
+Name: count, dtype: int64
+
+#PRAGMA table_info(project)
+(0, 'index', 'INTEGER', 0, None, 0)
+(1, 'reference', 'REAL', 0, None, 0)
+(2, 'category', 'TEXT', 0, None, 0)
+(3, 'type', 'TEXT', 0, None, 0)
+(4, 'subject', 'TEXT', 0, None, 0)
+(5, 'date', 'TEXT', 0, None, 0)
+(6, 'notifying_country', 'TEXT', 0, None, 0)
+(7, 'classification', 'TEXT', 0, None, 0)
+(8, 'risk_decision', 'TEXT', 0, None, 0)
+(9, 'distribution', 'TEXT', 0, None, 0)
+(10, 'forAttention', 'TEXT', 0, None, 0)
+(11, 'forFollowUp', 'TEXT', 0, None, 0)
+(12, 'operator', 'TEXT', 0, None, 0)
+(13, 'origin', 'TEXT', 0, None, 0)
+(14, 'hazards', 'TEXT', 0, None, 0)

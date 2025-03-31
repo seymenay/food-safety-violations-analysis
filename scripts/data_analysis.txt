@@ -1,0 +1,231 @@
+#df.info()
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 7496 entries, 0 to 7495
+Data columns (total 14 columns):
+ #   Column             Non-Null Count  Dtype  
+---  ------             --------------  -----  
+ 0   reference          7496 non-null   float64
+ 1   category           7496 non-null   object 
+ 2   type               7496 non-null   object 
+ 3   subject            7496 non-null   object 
+ 4   date               7496 non-null   object 
+ 5   notifying_country  7496 non-null   object 
+ 6   classification     7496 non-null   object 
+ 7   risk_decision      7496 non-null   object 
+ 8   distribution       7496 non-null   object 
+ 9   forAttention       4789 non-null   object 
+ 10  forFollowUp        5479 non-null   object 
+ 11  operator           7496 non-null   object 
+ 12  origin             7496 non-null   object 
+ 13  hazards            5378 non-null   object 
+dtypes: float64(1), object(13)
+memory usage: 820.0+ KB
+None
+
+#dtypes
+reference            float64
+category              object
+type                  object
+subject               object
+date                  object
+notifying_country     object
+classification        object
+risk_decision         object
+distribution          object
+forAttention          object
+forFollowUp           object
+operator              object
+origin                object
+hazards               object
+dtype: object
+
+
+#Column names
+Index(['reference', 'category', 'type', 'subject', 'date', 'notifying_country',
+       'classification', 'risk_decision', 'distribution', 'forAttention',
+       'forFollowUp', 'operator', 'origin', 'hazards'],
+      dtype='object')
+
+#Violation by years (SELECT strftime('%Y', `formatted_date`) AS year, COUNT(formatted_date) AS year_count FROM project GROUP BY strftime('%Y', `formatted_date`))
+('2020', 959)
+('2021', 1367)
+('2022', 1148)
+('2023', 1773)
+('2024', 1921)
+('2025', 328)
+
+Analysis started at 2025-03-22 23:59:08.097393
+**- Shape -**
+(7496, 15)
+
+**- NaN Check -**
+risk_decision        0
+origin               0
+distribution         0
+date                 0
+notifying_country    0
+category             0
+classification       0
+
+**- Describe -**
+         reference
+count  7496.000000
+mean   2022.862208
+std       1.503475
+min    2020.080500
+25%    2021.500750
+50%    2023.169650
+75%    2024.199000
+max    2025.159400
+
+**- Origin -**
+origin
+Poland            946
+France            804
+Netherlands       761
+Türkiye           631
+Spain             556
+Italy             520
+Germany           487
+Belgium           390
+United Kingdom    194
+Ukraine           123
+
+**- Notifying -**
+notifying_country
+Germany        1195
+Netherlands     967
+France          896
+Belgium         812
+Poland          600
+Italy           573
+Spain           367
+Denmark         221
+Austria         184
+Sweden          169
+
+**- Percentage Counts Origin -**
+origin
+Poland            12.620064
+France            10.725720
+Netherlands       10.152081
+Türkiye            8.417823
+Spain              7.417289
+Italy              6.937033
+Germany            6.496798
+Belgium            5.202775
+United Kingdom     2.588047
+Ukraine            1.640875
+
+**- Percentage Counts Notifying Country -**
+notifying_country
+Germany        15.941836
+Netherlands    12.900213
+France         11.953042
+Belgium        10.832444
+Poland          8.004269
+Italy           7.644077
+Spain           4.895945
+Denmark         2.948239
+Austria         2.454642
+Sweden          2.254536
+
+**- Category -**
+category
+poultry meat and poultry meat products                  1079
+fruits and vegetables                                    793
+dietetic foods, food supplements and fortified foods     585
+meat and meat products (other than poultry)              573
+cereals and bakery products                              560
+nuts, nut products and seeds                             463
+fish and fish products                                   435
+milk and milk products                                   387
+other food product / mixed                               385
+herbs and spices                                         328
+
+**- Percentage Counts Category -**
+category
+poultry meat and poultry meat products                  14.394344
+fruits and vegetables                                   10.578975
+dietetic foods, food supplements and fortified foods     7.804162
+meat and meat products (other than poultry)              7.644077
+cereals and bakery products                              7.470651
+nuts, nut products and seeds                             6.176628
+fish and fish products                                   5.803095
+milk and milk products                                   5.162753
+other food product / mixed                               5.136073
+herbs and spices                                         4.375667
+
+**- Category & Classification -**
+category                                              classification                        
+poultry meat and poultry meat products                alert notification                        561
+cereals and bakery products                           alert notification                        455
+poultry meat and poultry meat products                information notification for attention    454
+meat and meat products (other than poultry)           alert notification                        367
+nuts, nut products and seeds                          alert notification                        340
+fruits and vegetables                                 alert notification                        338
+milk and milk products                                alert notification                        310
+fruits and vegetables                                 information notification for attention    291
+other food product / mixed                            alert notification                        290
+dietetic foods, food supplements and fortified foods  alert notification                        270
+
+**- Subject & Risk & Hazards -**
+subject                                      risk_decision        hazards                                        
+ethylene oxide in sesame seeds               serious              ethylene oxide                                     55
+Salmonella Enteritidis in chicken neck skin  serious              Salmonella Enteritidis                             12
+Aflatoxins in dried figs from Turkey         serious              Aflatoxin B1  ,aflatoxin total                     11
+Norovirus in oysters from France             serious              norovirus                                          10
+Ethylene oxide in sesame seeds               serious              ethylene oxide                                      9
+Norovirus in oysters from The Netherlands    potentially serious  norovirus                                           9
+Salmonella Enteritidis in chicken            serious              Salmonella Enteritidis                              8
+Ambrosia in sorghum from France              serious              ragweed (Ambrosia spp.) seeds  too high content     8
+Norovirus in oysters from France             potentially serious  norovirus                                           8
+Ethylene oxyde in sesame seeds               serious              pesticide residues                                  7
+
+**- Hazards -**
+#I gathered Salmonella spp. under the same name 'Salmonella'.
+hazards
+Salmonella                                871
+Listeria monocytogenes                    480
+ethylene oxide                            359
+mercury                                   150
+Aflatoxin B1  ,aflatoxin total            138
+ochratoxin A                              124
+Escherichia coli shigatoxin-producing     109
+
+**- Origin & Hazards -**
+origin   hazards                        
+Poland   Salmonella Enteritidis             325
+France   Listeria monocytogenes             125
+Spain    mercury                            110
+Türkiye  Aflatoxin B1  ,aflatoxin total      76
+Poland   Salmonella spp.                     57
+
+**- Poland's Category -**
+category
+poultry meat and poultry meat products                  612
+meat and meat products (other than poultry)              79
+fruits and vegetables                                    54
+dietetic foods, food supplements and fortified foods     39
+fish and fish products                                   38
+cereals and bakery products                              18
+other food product / mixed                               16
+pet food                                                 13
+eggs and egg products                                    12
+herbs and spices                                         11
+
+**- Turkey's Category -**
+category
+fruits and vegetables                                   288
+herbs and spices                                         93
+nuts, nut products and seeds                             88
+confectionery                                            31
+other food product / mixed                               21
+cereals and bakery products                              20
+dietetic foods, food supplements and fortified foods     19
+food contact materials                                   17
+pet food                                                  8
+fats and oils                                             7
+
+**- Most Violations Reported on -**
+2023-05-17
