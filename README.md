@@ -154,28 +154,28 @@ To maintain a clean and modular structure, the project was divided into multiple
 - **Germany was the most frequent notifying country, reporting 1,195 violations.**  
   ![Notifying Countries](images/notifying_new.png)
 -**Also, see their percentages.**
-  ![Notifying Countries](/Users/seymenay/food-safety-violations-analysis/images/percentage_counts_notifting.png)
+  ![Notifying Countries](images/percentage_counts_notifting.png)
 - **The most affected category was poultry meat and poultry meat products, particularly from Poland, with 1,079 violations.**  
   - The second highest category was fruits and vegetables (793 cases), where Turkey played a significant role as a source.  
   - The third highest category was food supplements, with 585 violations reported in the last five years.  
-  ![Category Distribution](/Users/seymenay/food-safety-violations-analysis/images/category.png)
+  ![Category Distribution](images/category.png)
 -**Also, see their percentages.**
-  ![Notifying Countries](/Users/seymenay/food-safety-violations-analysis/images/percentage_counts_category.png)
+  ![Notifying Countries](images/percentage_counts_category.png)
 - **Notably, violations in the poultry meat category were mostly classified as alert notifications, indicating their critical importance.**
- ![Category Distribution](/Users/seymenay/food-safety-violations-analysis/images/hazards_vs_risk_decision.png)
+ ![Category Distribution](images/hazards_vs_risk_decision.png)
 - **When grouping hazards and risk decisions by subject, ethylene oxide (in sesame seeds) was notably significant.**
- ![Category Distribution](/Users/seymenay/food-safety-violations-analysis/images/hazards_vs_risk_decision.png)
+ ![Category Distribution](images/hazards_vs_risk_decision.png)
 - **Salmonella was the most frequently reported hazard, with over 1,400 cases.**  
   - It was followed by Listeria (just over 400 cases) and ethylene oxide (fewer than 400 cases).  
-  ![Top Hazards](/Users/seymenay/food-safety-violations-analysis/images/distribution_of_hazards.png)
+  ![Top Hazards](images/distribution_of_hazards.png)
 
 - **In the origin & hazard dataset, Poland was the leading source of Salmonella cases, accounting for approximately 700 reports.**
-  ![Top Hazards](/Users/seymenay/food-safety-violations-analysis/images/origin_vs_hazard.png)
+  ![Top Hazards](images/origin_vs_hazard.png)
 
 - **Poland vs Turkey Category Comparison:**  
   - **Poland:** The top category is poultry meat and poultry meat products with 612 reports.  
   - **Turkey:** The most common category is fruits and vegetables with 288 reports.  
-  ![Poland vs Turkey](/Users/seymenay/food-safety-violations-analysis/images/poland_vs_turkey.png)
+  ![Poland vs Turkey](images/poland_vs_turkey.png)
 
 ### Violation Trends Over the Years
 
@@ -185,7 +185,7 @@ To maintain a clean and modular structure, the project was divided into multiple
 - **2023:** A sharp rise, reaching nearly 1,800.
 - **2024:** The trend continued upward, surpassing 1,900 cases.
 - **2025 (so far):** The count stands at 328 (not included in trend analysis).  
-  ![Yearly Trends](/Users/seymenay/food-safety-violations-analysis/images/annual_violation_counts.png)
+  ![Yearly Trends](images/annual_violation_counts.png)
 
 # Challenges & Solutions
 
