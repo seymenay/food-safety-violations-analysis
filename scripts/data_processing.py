@@ -5,9 +5,10 @@ def load_data(filepath):
     try: 
         data = pd.read_excel(filepath)
         print("DataFrame is successfully loaded.")
+
         return data
     except Exception as E:
-        print(f"Something went wrong: {E}")
+        print(f"Error loading data: {E}")
         return None
 
 def clean_data(df):
