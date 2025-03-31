@@ -162,7 +162,7 @@ To maintain a clean and modular structure, the project was divided into multiple
 -**Also, see their percentages.**
   ![Notifying Countries](images/percentage_counts_category.png)
 - **Notably, violations in the poultry meat category were mostly classified as alert notifications, indicating their critical importance.**
- ![Category Distribution](images/hazards_vs_risk_decision.png)
+ ![Category Distribution](images/category_vs_classification.png)
 - **When grouping hazards and risk decisions by subject, ethylene oxide (in sesame seeds) was notably significant.**
  ![Category Distribution](images/hazards_vs_risk_decision.png)
 - **Salmonella was the most frequently reported hazard, with over 1,400 cases.**  
